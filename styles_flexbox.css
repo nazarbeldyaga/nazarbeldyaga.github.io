@@ -84,6 +84,7 @@ body {
 }
 
 .item2 {
+    
     flex: 1;
     background-color: peachpuff;
     flex-grow: 1;
