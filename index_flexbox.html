@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 1</title>
+    <link rel="stylesheet" href="styles_flexbox.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="container-1">
+            <div class="item item1"><h1>Lorem ipsum dolor sit amet копія 1</h1></div>
+            <div class="item x" id="item_lorem_middle_x"></div>
+        </div>
+        <div class="container-2">
+            <div class="con-left">
+                <div class="con-235">
+
+                    <div class="con-25">
+                        <div class="item item2" id="item_lorem_middle2">2</div>                            
+                        <div class="item item5" id="item_lorem_middle5">5</div>
+                    </div>          
+
+                    <div class="item item3" id="item_lorem_middle2">
+                        <img id="mainImage" src="images/template7desktop.png" class="MainImage" alt="Описание">
+                        <img id="mainImageMobile" src="images/template7mobile.png" class="MainImageMobile" alt="Описание">
+                    </div>
+                    
+                </div>                
+                <div class="item item6" id="item_lorem_middle_text6"><h2></h2>                    
+                    <div class="item y" id="item_lorem_middle_y"></div> 
+                </div>                
+            </div>
+            <div class="con-right">
+                <div class="item item4" >
+                    <nav>
+                        <ul>
+                            <h2>
+                                <li><a href="index2.html" class="no-underline">Instance 2</a></li>
+                                <li><a href="index3.html" class="no-underline">Instance 3</a></li>
+                                <li><a href="index4.html" class="no-underline">Instance 4</a></li>
+                                <li><a href="index5.html" class="no-underline">Instance 5</a></li>
+                            </h2>
+                        </ul>
+                    </nav>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('text.txt')   
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('item_lorem').innerText = data;
+            })
+            .catch(error => console.error('ПОмилка:', error));        
+    </script>
+    <script>
+        fetch('text_lite.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('item_lorem_lite').innerText = data;
+            })
+            .catch(error => console.error('Помилка:', error));
+    </script>
+    <script>
+        fetch('text_middle.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('item_lorem_middle_x').innerText = data;
+                document.getElementById('item_lorem_middle_y').innerText = data;
+                document.getElementById('item_lorem_middle_text6').querySelector('h2').innerText = data;
+                document.getElementById('item_lorem_middle2').innerText = data;
+                document.getElementById('item_lorem_middle5').innerText = data;
+            })
+            .catch(error => console.error('Помилка:', error));
+    </script>
+    <script>
+        function updateImage() {
+            const desktopImage = document.getElementById('mainImage');
+            const mobileImage = document.getElementById('mainImageMobile');
+    
+            if (window.innerWidth <= 768) {
+                desktopImage.style.display = 'none';
+                mobileImage.style.display = 'block';
+            } else {
+                desktopImage.style.display = 'block';
+                mobileImage.style.display = 'none';
+            }
+        }
+    
+        window.onload = updateImage;
+    
+        window.onresize = updateImage;
+    </script>
+</body>
+</html>
