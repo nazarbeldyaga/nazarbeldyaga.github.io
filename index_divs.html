@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 1</title>
+    <link rel="stylesheet" href="styles_divs.css">
+</head>
+<body>
+    <div class="container">
+        <div class="block block-1">
+            <div class="text-content-1">
+                <p><h1>Версія без flex та grid</h1></p>
+            </div>
+            <div class="block-x">
+                <p1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae rerum, quisquam consequuntur impedit fugit et doloribus ipsa! Ipsam esse quis ipsum, earum voluptatem tempore minus laudantium aliquam repellendus tempora.</p1>
+            </div>
+        </div>
+        <div class="block block-2">
+            <div class="text-content-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis modi illum voluptatibus porro, molestiae sapiente autem soluta impedit dolor, iure obcaecati fugit accusamus veritatis hic fugiat sequi, quis est quaerat?
+                Sint amet distinctio vero doloribus accusamus voluptatum tempore dolorum corporis ducimus. Non eveniet excepturi error at doloribus. Hic dolorum rerum ipsa totam aliquid illum quam non odio, repellendus, et earum.</p>
+            </div>
+        </div>
+        <div class="block block-5">
+            <div class="text-content-5">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, amet eligendi sapiente recusandae et tempora ea officiis suscipit aliquam totam corrupti at ad nobis, iure blanditiis possimus nemo placeat cupiditate.
+                Laudantium, doloremque laboriosam ducimus iure maiores soluta quidem amet dolor iusto, temporibus officiis illum eius molestias cum? Culpa modi voluptas dolorem! Aliquid distinctio accusantium voluptatem adipisci iste. Tempora, accusantium animi.</p>
+            </div>
+        </div>
+        <div class="block block-3">
+            <img id="mainImage" src="images/template7desktop.png" class="MainImage" alt="Описание">
+            <img id="mainImageMobile" src="images/template7mobile.png" class="MainImageMobile" alt="Описание">
+        </div>
+        <div class="block block-4">
+            <h2>
+                <nav>
+                    <ul> 
+                        <li><a href="index.html" class="no-underline">Grid_1</a></li>
+                        <li><a href="index2.html" class="no-underline">Grid_2</a></li>
+                        <li><a href="index3.html" class="no-underline">Grid_3</a></li>
+                        <li><a href="index4.html" class="no-underline">Grid_4</a></li>
+                        <li><a href="index_flexbox.html" class="no-underline">FlexBox_ver</a></li>
+                    </ul>
+                </nav>  
+            </h2> 
+        </div>
+        <div class="block block-6">
+            <div class="text-content-6">
+                <p><h1>Версія без flex та grid</h1></p>
+            </div>
+            <div class="block-y">
+                <p1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae rerum, quisquam consequuntur impedit fugit et doloribus ipsa! Ipsam esse quis ipsum, earum voluptatem tempore minus laudantium aliquam repellendus tempora.</p1>
+            </div>
+        </div>    
+
+        <script>
+            function updateImage() {
+                const desktopImage = document.getElementById('mainImage');
+                const mobileImage = document.getElementById('mainImageMobile');
+        
+                if (window.innerWidth <= 768) {
+                    desktopImage.style.display = 'none';
+                    mobileImage.style.display = 'block';
+                } else {
+                    desktopImage.style.display = 'block';
+                    mobileImage.style.display = 'none';
+                }
+            }
+        
+            // Проверяем размер окна при загрузке страницы
+            window.onload = updateImage;
+        
+            // Обновляем изображение при изменении размера окна
+            window.onresize = updateImage;
+        </script>
+</body>
+</html>
