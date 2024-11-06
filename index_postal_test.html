@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0c764b;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 660px;
+      margin: 0 auto;
+      background-color: #d2c3b1;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .header, .footer {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .header img {
+      width: 80px;
+      height: auto;
+    }
+    .content {
+      padding: 20px 24px;
+    }
+    h1, h2 {
+      color: #1f3011;
+      margin: 0 0 12px;
+    }
+    .section {
+      padding: 20px 24px;
+      background-color: #d2c3b1;
+      margin: 20px 0;
+    }
+    .divider {
+      border-top: 2px solid #ffffff;
+      margin: 20px 0;
+    }
+    .section img {
+      width: 100%;
+      max-width: 298px;
+      display: block;
+      margin: 12px auto;
+    }
+    .section p {
+      color: #2f481b;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -12px;
+    }
+    .flex-item {
+      flex: 1 0 50%;
+      padding: 12px;
+    }
+    @media (max-width: 600px) {
+      .container {
+        width: 100%;
+      }
+      .flex-item {
+        flex: 1 0 100%;
+      }
+    }
+  </style>
+</head>
+<body style="background-color: #0c764b; padding: 0; margin: 0;">
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img src="https://mcusercontent.com/2c6c6ea8102eabd06660ca431/images/9695d774-bd8f-b672-b895-3889da57f3c8.png" alt="Logo">
+    </div>
+
+    <!-- Content -->
+    <div class="content" style="text-align: center;">
+        <h1>Skyrim Dragon's Review</h1>
+        <p>Today I will tell you about the dragons of Skyrim.</p>
+        <div style="display: flex; justify-content: center;">
+          <img src="https://mcusercontent.com/2c6c6ea8102eabd06660ca431/images/f1c04614-9eca-fdd3-fa12-ae33ef161783.jpg" alt="Common Dragon" style="width: 90%; max-width: 100%; height: auto; object-fit: cover;">
+        </div>
+    </div>
+      
+    <!-- Section: Basic Information -->
+    <div class="section" style="text-align: center;">
+        <h2>Basic Information</h2>
+        <p>Dragons are intelligent lizards, children of Akatosh, who live in Nirn. When they appeared in Nirn is unknown, but they may have been the first intelligent species on the planet. The homeland of dragons is considered to be the continent of Akavir, from where they subsequently migrated and spread throughout Tamriel. For a long time, these creatures were considered either extinct or simply flew away to an unknown location, until the events of The Elder Scrolls V: Skyrim. According to the plot of this game, it becomes known that most of the dragons were killed, but since only the Dragonborn can finally destroy the dragon, Alduin, the firstborn of Akatosh, who returned "from beyond the world", gradually begins to bring them back to life. During the game, you can watch as Alduin personally resurrects his relative (Sahloknir) in the dragon mound.</p>
+    </div>
+      
+
+    <div class="divider"></div>
+
+    <!-- Section: Common Dragon -->
+    <div class="section">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="flex: 1; padding: 5px;">
+            <h2>A Common Dragon</h2>
+            <p>The weakest type of dragon. According to history, these dragons appeared on Akavir, where the Tsaesci tried to destroy them. During the war between these two races, almost all the dragons died, and the remaining ones moved to Tamriel.</p>
+          </div>
+          <div style="flex: 1.5; padding: 5px;">
+            <img src="https://mcusercontent.com/2c6c6ea8102eabd06660ca431/images/a7762d23-f1e3-541b-0f38-4373d0e4657f.jpg" alt="Common Dragon" style="width: 100%; height: auto;">
+          </div>
+        </div>
+      </div>
+      
+
+    <div class="divider"></div>
+
+    <!-- Section: Blood Dragon -->
+    <div class="section">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="flex: 1; padding: 5px;">
+            <h2>Blood Dragon</h2>
+            <p>Blood dragons are known for their greenish-gray skin and toothy mouth, as well as small, sharp growths on the end of their tails.
+
+                The most famous blood dragon was Skakmat, a close friend of the witch Nulfaga.</p>
+          </div>
+          <div style="flex: 1.5; padding: 5px;">
+            <img src="https://mcusercontent.com/2c6c6ea8102eabd06660ca431/images/0c5c21e5-48ed-5d08-243b-48a3b257d764.jpg" alt="Common Dragon">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Frost Dragon -->
+      <div class="divider"></div>
+      <div class="section">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="flex: 1; padding: 5px;">
+            <h2>Frost Dragon</h2>
+            <p>The Frost Dragon has glossy white skin with massive black spikes protruding from its spine.</p>
+          </div>
+          <div style="flex: 1.5; padding: 5px;">
+            <img src="https://mcusercontent.com/2c6c6ea8102eabd06660ca431/images/1658b6d6-ea54-aa24-513d-1e818c2fd217.jpg" alt="Common Dragon">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Elder Dragon -->
+      <div class="divider"></div>
+      <div class="section">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="flex: 1; padding: 5px;">
+            <h2>Elder Dragon</h2>
+            <p>The Elder Dragon has tough bronze skin and is a master of using Yol (fire) or Fo (frost) to breathe deadly air. This species has a very high health pool and is considered one of the strongest.</p>
+          </div>
+          <div style="flex: 1.5; padding: 5px;">
+            <img src="https://mcusercontent.com/2c6c6ea8102eabd06660ca431/images/aa9ae138-d7f0-f0b6-a567-6e5c9b75ca18.jpg" alt="Common Dragon">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Ancient Dragon -->
+      <div class="divider"></div>
+      <div class="section">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="flex: 1; padding: 5px;">
+            <h2>Ancient Dragon</h2>
+            <p>Ancient dragons are characterized by their reddish skin with strange black markings and spikes. They, like the Elders, are among the strongest dragons that use Yol (fire) or Fo (frost) in their breath.</p>
+          </div>
+          <div style="flex: 1.5; padding: 5px;">
+            <img src="https://mcusercontent.com/2c6c6ea8102eabd06660ca431/images/3d99c60e-a2fa-5a9c-f34a-e81d450dd458.jpg" alt="Common Dragon">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Skeletal-Dragon -->
+      <div class="divider"></div>
+      <div class="section">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="flex: 1; padding: 5px;">
+            <h2>Skeletal-Dragon</h2>
+            <p>This is not really a dragon, but a dragon skeleton resurrected by magic. Although it does not fly and does not have a dragon soul, it is still very dangerous in close combat and has a frost breath.</p>
+          </div>
+          <div style="flex: 1.5; padding: 5px;">
+            <img src="https://mcusercontent.com/2c6c6ea8102eabd06660ca431/images/c10a74aa-0f04-68f6-6176-a937ff833106.jpg" alt="Common Dragon">
+          </div>
+        </div>
+      </div>
+  
+      <div class="divider"></div>
+
+    <!-- Section: Basic Information -->
+    <div class="section" style="text-align: center;">
+        <h2>Sum up</h2>
+        <p>Some of the dragons of Skyrim were gathered here. If you want to know more about this ancient animal race, you can follow the link below to learn more.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" style="text-align: center; padding: 20px;">
+        <hr style="border: none; border-top: 1px solid #ffffff; margin: 20px 0;">
+        <p>Some of the dragons of Skyrim were gathered here. If you want to know more about this ancient animal race, you can follow the link below to learn more.</p>
+        <a href="index.html" style="display: inline-block; padding: 12px 24px; background-color: #335c26; color: #fff; border-radius: 20px; text-decoration: none; font-weight: bold;">Go to the site to learn more</a>
+        <div style="margin: 20px 0;">
+        <img src="https://mcusercontent.com/2c6c6ea8102eabd06660ca431/images/9695d774-bd8f-b672-b895-3889da57f3c8.png" alt="Logo" style="width: 80px; height: auto;">
+        </div>
+        <p style="font-size: 14px; color: #333;">
+        Want to change how you receive these emails?<br>
+        You can update your preferences or unsubscribe
+        </p>
+    </div>  
+  </div>
+</body>
+</html>
