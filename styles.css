@@ -43,9 +43,9 @@ body {
 }
 
 .x{
-    position: absolute; /* Абсолютное позиционирование */
-    right: 0; /* Привязка к правому краю */
-    top: 50%; /* Центрирование по вертикали */
+    position: absolute;
+    right: 0;
+    top: 50%;
     transform: translateY(-50%);
 
     overflow: auto;
@@ -67,22 +67,22 @@ body {
     overflow: auto;
     width: 65%;
     max-height: 80%;
-    top: 50%; /* Центрирование по вертикали */
+    top: 50%;
     transform: translateY(-50%);
     
     position: absolute;
     left: 0;
 
     display: flex;
-    justify-content: start;    /* Горизонтальное выравнивание */
-    align-items: flex-start;    /* Вертикальное выравнивание */
+    justify-content: start;
+    align-items: flex-start;
     
 }
 
 .text6{
-    position: absolute; /* Абсолютное позиционирование */
-    right: 0; /* Привязка к правому краю */
-    top: 50%; /* Центрирование по вертикали */
+    position: absolute;
+    right: 0;
+    top: 50%;
     transform: translateY(-50%);
 
     overflow: auto;
@@ -91,8 +91,8 @@ body {
     
 
     display: flex;
-    justify-content: end;    /* Горизонтальное выравнивание */
-    align-items: flex-start;    /* Вертикальное выравнивание */
+    justify-content: end;
+    align-items: flex-start;
 }
 
 .item1 {
@@ -111,8 +111,8 @@ body {
     background-color: peachpuff;
 
     display: flex;
-    justify-content: start;    /* Горизонтальное выравнивание */
-    align-items: center;    /* Вертикальное выравнивание */
+    justify-content: start;
+    align-items: center;
 }
 
 .item3 {
@@ -133,8 +133,8 @@ body {
     background-color: peachpuff;
 
     display: flex;
-    justify-content: end;    /* Горизонтальное выравнивание */
-    align-items: center;    /* Вертикальное выравнивание */
+    justify-content: end;
+    align-items: center;
 }
 
 .item5 {
@@ -143,8 +143,8 @@ body {
     background-color: lightgreen;
 
     display: flex;
-    justify-content: start;    /* Горизонтальное выравнивание */
-    align-items: center;    /* Вертикальное выравнивание */
+    justify-content: start;
+    align-items: center;
 }
 
 .item6 {
@@ -153,32 +153,32 @@ body {
     background-color: lightblue;
 
     display: flex;
-    justify-content: end;    /* Горизонтальное выравнивание */
-    align-items: center;     /* Вертикальное выравнивание */
+    justify-content: end;
+    align-items: center;
 
     position: relative;
 }
 
 .MainImage {
-    width: 100%; /* Занимает всю ширину контейнера */
-    height: auto; /* Сохраняет пропорции изображения */
-    display: block; /* Убирает отступы вокруг изображения */
-    margin: 0 auto; /* Центрирует изображение */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .MainImageMobile {
-    display: none; /* Скрываем мобильное изображение по умолчанию */
+    display: none;
 }
 
-/* Медиа-запрос для мобильной версии */
+
 @media (max-width: 768px) {
     .MainImage {
-        display: none; /* Скрываем десктопное изображение на мобильных устройствах */
+        display: none;
     }
     .MainImageMobile {
-        display: block; /* Показываем мобильное изображение */
-        width: 100%; /* Занимает всю ширину контейнера */
-        height: auto; /* Сохраняет пропорции изображения */
+        display: block;
+        width: 100%;
+        height: auto;
     }
 }
 
